@@ -1,5 +1,6 @@
 ﻿using PlanningPatterns.DesignPatterns;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Builder;
+using PlanningPatterns.DesignPatterns.CreationalPatterns.Factory;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Singleton;
 using System.Runtime.CompilerServices;
 
@@ -16,6 +17,7 @@ else
 {
     Console.WriteLine("Singleton failed me");
 }
+Console.WriteLine("-------------------------");
 //CreationalPatterns.AbstractFactory - see class Client
 
 //CreationalPatterns.Builder
@@ -29,4 +31,15 @@ shopForYou.ConstructLaptop();
 Laptop laptop = shopForYou.GetLaptop();
 Console.WriteLine(laptop);
 
+Console.WriteLine("-----------------------");
+
+//CreationalPatterns.Factory
+
+Developer dev = new PanelDeveloper("PanelDev1");
+House house1 = dev.Create();
+
+dev = new WoodDeveloper("WoodDev1");
+House house2 = dev.Create();
+
+Console.WriteLine("------------------------");
 
