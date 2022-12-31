@@ -8,5 +8,10 @@ namespace PlanningPatterns.DesignPatterns.CreationalPatterns.AbstractFactory
 {
     internal interface IAbstractFactory
     {
+        public IAbstractProductA CreateProductA();
+
+        public IAbstractProductB CreateProductB();
+
+
     }
 }

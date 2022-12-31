@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlanningPatterns.DesignPatterns.CreationalPatterns.AbstractFactory
 {
-    internal class ProductA2
+    internal class ProductA2 : IAbstractProductA
     {
     }
 }

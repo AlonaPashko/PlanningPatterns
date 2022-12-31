@@ -20,7 +20,6 @@
     <Folder Include="DesignPatterns\BehaviouralPatterns\Observer\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\TemplateMethod\" />
     <Folder Include="DesignPatterns\CreationalPatterns\Factory\" />
-    <Folder Include="DesignPatterns\CreationalPatterns\Builder\" />
     <Folder Include="DesignPatterns\CreationalPatterns\Prototype\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Adapter\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Composite\" />
