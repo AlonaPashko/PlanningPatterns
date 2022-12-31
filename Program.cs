@@ -1,6 +1,8 @@
 ﻿using PlanningPatterns.DesignPatterns;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Singleton;
 
+//CreationalPatterns.Singleton
+
 Singleton firstInstance = Singleton.Instance();
 Singleton secondInstance = Singleton.Instance();
 
