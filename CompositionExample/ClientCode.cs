@@ -8,5 +8,9 @@ namespace PlanningPatterns.CompositionExample
 {
     internal class ClientCode
     {
+        public void CallingCode()
+        {
+            University university1 = new University { Name = "University1" };
+        }
     }
 }

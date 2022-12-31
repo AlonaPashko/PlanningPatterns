@@ -8,5 +8,6 @@ namespace PlanningPatterns.AggregationExample
 {
     internal class Teacher
     {
+        public string Name { get; set; }
     }
 }

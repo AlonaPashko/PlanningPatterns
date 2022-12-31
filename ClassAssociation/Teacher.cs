@@ -8,5 +8,7 @@ namespace PlanningPatterns.ClassAssociation
 {
     internal class Teacher
     {
+        public string Name { get; set; }
+        public List<Student> students { get; set; }
     }
 }

@@ -8,5 +8,7 @@ namespace PlanningPatterns.Interfaces
 {
     internal interface IFlying
     {
+        int FlySped { get; set; }
+        void Fly();
     }
 }

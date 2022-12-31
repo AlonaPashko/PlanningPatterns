@@ -7,4 +7,30 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Mediator\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\ChainOfResponsibility\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Command\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Iterator\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Interpretor\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Memento\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Visitor\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\State\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Strategy\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\Observer\" />
+    <Folder Include="DesignPatterns\BehaviouralPatterns\TemplateMethod\" />
+    <Folder Include="DesignPatterns\CreationalPatterns\Factory\" />
+    <Folder Include="DesignPatterns\CreationalPatterns\AbstractFactory\" />
+    <Folder Include="DesignPatterns\CreationalPatterns\Builder\" />
+    <Folder Include="DesignPatterns\CreationalPatterns\Prototype\" />
+    <Folder Include="DesignPatterns\CreationalPatterns\Singleton\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Adapter\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Composite\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\FlyWeight\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Facade\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Bridge\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Decorator\" />
+    <Folder Include="DesignPatterns\StructuralPatterns\Proxy\" />
+  </ItemGroup>
+
 </Project>

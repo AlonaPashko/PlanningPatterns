@@ -8,5 +8,7 @@ namespace PlanningPatterns.Interfaces
 {
     internal interface IRunning
     {
+        int RunningSpeed { get; set; }
+        void Run();
     }
 }
