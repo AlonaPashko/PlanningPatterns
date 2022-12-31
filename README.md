@@ -36,3 +36,6 @@ Also this project has an EngineDiagram for the Engine folder and AnimalDiagram f
 As well was created some another classes, for example ElectricBus or Car classes, but was deleted because that wasn`t need at
 this actual moment.
 
+Added a folders system DesignPatterns for studying Creational, Structural and Behavioural patterns with folders with characteristic
+names.
+
