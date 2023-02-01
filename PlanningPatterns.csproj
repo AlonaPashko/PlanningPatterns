@@ -19,13 +19,11 @@
     <Folder Include="DesignPatterns\BehaviouralPatterns\Strategy\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Observer\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\TemplateMethod\" />
-    <Folder Include="DesignPatterns\CreationalPatterns\Prototype\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Adapter\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Composite\" />
     <Folder Include="DesignPatterns\StructuralPatterns\FlyWeight\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Facade\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Bridge\" />
-    <Folder Include="DesignPatterns\StructuralPatterns\Decorator\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Proxy\" />
   </ItemGroup>
 
