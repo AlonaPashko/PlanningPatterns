@@ -22,7 +22,6 @@
     <Folder Include="DesignPatterns\StructuralPatterns\Adapter\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Composite\" />
     <Folder Include="DesignPatterns\StructuralPatterns\FlyWeight\" />
-    <Folder Include="DesignPatterns\StructuralPatterns\Facade\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Bridge\" />
     <Folder Include="DesignPatterns\StructuralPatterns\Proxy\" />
   </ItemGroup>

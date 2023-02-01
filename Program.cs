@@ -4,6 +4,7 @@ using PlanningPatterns.DesignPatterns.CreationalPatterns.Factory;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Prototype;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Singleton;
 using PlanningPatterns.DesignPatterns.StructuralPatterns.Decorator;
+using PlanningPatterns.DesignPatterns.StructuralPatterns.Facade;
 using System.Runtime.CompilerServices;
 
 //CreationalPatterns.Singleton
@@ -74,3 +75,13 @@ ICake cake4 = new WithSprinkles(new WithWhippedCream(new SimpleCake()));
 Console.WriteLine(cake4.Ingredients());
 Console.WriteLine(cake4.Price().ToString());
 
+//StructuralPatterns.Facade
+
+TextEditor textEditor = new TextEditor();
+Compiller compiller = new Compiller();
+CLR crl = new CLR();
+
+VisualStudioFacade facade = new VisualStudioFacade(textEditor, compiller, crl);
+
+Programmer programmer = new Programmer();
+programmer.CreateApplication(facade);
