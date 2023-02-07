@@ -1,4 +1,5 @@
 ﻿using PlanningPatterns.DesignPatterns;
+using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Visitor;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Builder;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Factory;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Prototype;
@@ -85,3 +86,18 @@ VisualStudioFacade facade = new VisualStudioFacade(textEditor, compiller, crl);
 
 Programmer programmer = new Programmer();
 programmer.CreateApplication(facade);
+
+//BehaviouralPatterns.Visitor
+
+Console.WriteLine("---------------------");
+Console.WriteLine();
+
+var structure = new Bank();
+structure.Add(new Person { Name = "Alona Pashko", Number = 12345 });
+structure.Add(new Company { Name = "AlonaSoftware", RegNumber = 1313124, Number = 12345 });
+
+structure.Accept(new HTMLVisitor());
+structure.Accept(new XMLVisitor());
+
+Console.WriteLine("---------------------");
+Console.WriteLine();

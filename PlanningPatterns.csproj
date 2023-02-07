@@ -14,7 +14,6 @@
     <Folder Include="DesignPatterns\BehaviouralPatterns\Iterator\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Interpretor\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Memento\" />
-    <Folder Include="DesignPatterns\BehaviouralPatterns\Visitor\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\State\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Strategy\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Observer\" />
