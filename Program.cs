@@ -1,4 +1,5 @@
 ﻿using PlanningPatterns.DesignPatterns;
+using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Mediator;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Visitor;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Builder;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Factory;
@@ -101,3 +102,21 @@ structure.Accept(new XMLVisitor());
 
 Console.WriteLine("---------------------");
 Console.WriteLine();
+
+//BehaviouralPatterns.Mediator
+
+ManagerMediator mediator = new ManagerMediator();
+Colleague customer = new CustomerColleague(mediator);
+Colleague developer = new ProgrammerColleague(mediator);
+Colleague tester = new TesterColleague(mediator);
+
+mediator.Customer = customer;
+mediator.Programmer = developer;
+mediator.Tester = tester;
+
+customer.Send("Here is an order. Could you to develope the program?");
+developer.Send("The program is ready. Could you to test it?");
+tester.Send("The program is already tested and ready to sell");
+
+Console.WriteLine();
+Console.WriteLine("-----------------------");

@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPatterns\BehaviouralPatterns\Mediator\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\ChainOfResponsibility\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Command\" />
     <Folder Include="DesignPatterns\BehaviouralPatterns\Iterator\" />
