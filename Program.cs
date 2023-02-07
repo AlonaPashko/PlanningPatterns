@@ -1,5 +1,6 @@
 ﻿using PlanningPatterns.DesignPatterns;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Mediator;
+using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Strategy;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Visitor;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Builder;
 using PlanningPatterns.DesignPatterns.CreationalPatterns.Factory;
@@ -120,3 +121,13 @@ tester.Send("The program is already tested and ready to sell");
 
 Console.WriteLine();
 Console.WriteLine("-----------------------");
+
+//BehaviouralPattern.Startegy
+
+Car auto = new Car(4, "Volvo", new PetrolMove());
+auto.Move();
+
+auto.Movable = new ElectricMove();
+auto.Move();
+
+Console.WriteLine("----------------------");
