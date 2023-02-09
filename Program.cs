@@ -1,4 +1,5 @@
 ﻿using PlanningPatterns.DesignPatterns;
+using PlanningPatterns.DesignPatterns.BehaviouralPatterns.ChainOfResponsibility;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Mediator;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Strategy;
 using PlanningPatterns.DesignPatterns.BehaviouralPatterns.Visitor;
@@ -130,4 +131,21 @@ auto.Move();
 auto.Movable = new ElectricMove();
 auto.Move();
 
+Console.WriteLine("----------------------");
+Console.WriteLine();
+
+//BehaviouralPattern.ChainOfResponsibility
+
+Reciever reciever = new Reciever(false, true, true);
+
+PaymentHandler bankPaymentHandler = new BankPaymentHandler();
+PaymentHandler payPalPaymentHandler = new PayPalPaymentHandler();
+PaymentHandler moneyPaymentHandler = new MoneyPaymentHandler();
+
+bankPaymentHandler.Successor = payPalPaymentHandler;
+payPalPaymentHandler.Successor = moneyPaymentHandler;
+
+bankPaymentHandler.Handle(reciever);
+
+Console.WriteLine();
 Console.WriteLine("----------------------");
